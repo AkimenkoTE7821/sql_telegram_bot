@@ -1,0 +1,121 @@
+[
+  {
+    "user_id": 1319913577,
+    "username": "Mayorova_L",
+    "score": 5,
+    "total": 10,
+    "mode": "обучение",
+    "answers": [
+      {
+        "question_id": 1,
+        "answer": 1,
+        "correct": false
+      },
+      {
+        "question_id": 2,
+        "answer": 0,
+        "correct": true
+      },
+      {
+        "question_id": 3,
+        "answer": 1,
+        "correct": false
+      },
+      {
+        "question_id": 4,
+        "answer": 0,
+        "correct": true
+      },
+      {
+        "question_id": 5,
+        "answer": 0,
+        "correct": true
+      },
+      {
+        "question_id": 6,
+        "answer": 0,
+        "correct": true
+      },
+      {
+        "question_id": 7,
+        "answer": 2,
+        "correct": false
+      },
+      {
+        "question_id": 8,
+        "answer": 1,
+        "correct": false
+      },
+      {
+        "question_id": 9,
+        "answer": 2,
+        "correct": false
+      },
+      {
+        "question_id": 10,
+        "answer": 0,
+        "correct": true
+      }
+    ]
+  },
+
+  {
+    "user_id": 1319913577,
+    "username": "Mayorova_L",
+    "score": 5,
+    "total": 10,
+    "mode": "контроль",
+    "answers": [
+      {
+        "question_id": 1,
+        "answer": 0,
+        "correct": true
+      },
+      {
+        "question_id": 2,
+        "answer": 2,
+        "correct": false
+      },
+      {
+        "question_id": 3,
+        "answer": 1,
+        "correct": false
+      },
+      {
+        "question_id": 4,
+        "answer": 0,
+        "correct": true
+      },
+      {
+        "question_id": 5,
+        "answer": 1,
+        "correct": false
+      },
+      {
+        "question_id": 6,
+        "answer": 2,
+        "correct": false
+      },
+      {
+        "question_id": 7,
+        "answer": 0,
+        "correct": true
+      },
+      {
+        "question_id": 8,
+        "answer": 1,
+        "correct": false
+      },
+      {
+        "question_id": 9,
+        "answer": 0,
+        "correct": true
+      },
+      {
+        "question_id": 10,
+        "answer": 0,
+        "correct": true
+      }
+    ]
+  }
+]

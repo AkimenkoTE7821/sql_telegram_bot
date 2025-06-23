@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "question": "Как выбрать все столбцы и записи из таблицы musicians?",
+    "options": [
+      "SELECT * FROM musicians;",
+      "SELECT ALL FROM musicians;",
+      "SELECT columns FROM musicians;"
+    ],
+    "correct_option": 0,
+    "explanation": "В PostgreSQL для вывода всех столбцов и записей используется SELECT * FROM table_name;."
+  },
+  {
+    "id": 2,
+    "question": "Как в PostgreSQL задать псевдоним столбцу name в запросе?",
+    "options": [
+      "SELECT name AS musician FROM musicians;",
+      "SELECT name musician FROM musicians;",
+      "SELECT musician = name FROM musicians;"
+    ],
+    "correct_option": 0,
+    "explanation": "Псевдонимы столбцов задаются через AS: SELECT name AS musician FROM musicians;."
+  },
+  {
+    "id": 3,
+    "question": "Какой запрос выведет уникальные страны из таблицы musicians?",
+    "options": [
+      "SELECT DISTINCT country FROM musicians;",
+      "SELECT country FROM musicians;",
+      "SELECT UNIQUE country FROM musicians;"
+    ],
+    "correct_option": 0,
+    "explanation": "Ключевое слово DISTINCT убирает дублирующиеся значения."
+  },
+  {
+    "id": 4,
+    "question": "Как выбрать первые три записи из таблицы musicians?",
+    "options": [
+      "SELECT * FROM musicians LIMIT 3;",
+      "SELECT TOP 3 * FROM musicians;",
+      "SELECT * FROM musicians FIRST 3;"
+    ],
+    "correct_option": 0,
+    "explanation": "В PostgreSQL ограничение количества строк задаётся через LIMIT."
+  },
+  {
+    "id": 5,
+    "question": "Какой оператор используется для объединения строк в PostgreSQL?",
+    "options": [
+      "||",
+      "+",
+      "CONCATENATE"
+    ],
+    "correct_option": 0,
+    "explanation": "В PostgreSQL строки объединяются оператором ||."
+  },
+  {
+    "id": 6,
+    "question": "Как вывести фамилии музыкантов в верхнем регистре?",
+    "options": [
+      "SELECT UPPER(name) FROM musicians;",
+      "SELECT name TO UPPER FROM musicians;",
+      "SELECT name AS UPPER FROM musicians;"
+    ],
+    "correct_option": 0,
+    "explanation": "Функция UPPER() переводит строку в верхний регистр."
+  },
+  {
+    "id": 7,
+    "question": "Какой запрос отсортирует музыкантов по дате рождения по убыванию?",
+    "options": [
+      "SELECT * FROM musicians ORDER BY birthday DESC;",
+      "SELECT * FROM musicians ORDER BY birthday ASC;",
+      "SELECT * FROM musicians SORT BY birthday DESC;"
+    ],
+    "correct_option": 0,
+    "explanation": "Для сортировки используется ORDER BY ... DESC."
+  },
+  {
+    "id": 8,
+    "question": "Как сгруппировать музыкантов по стране и посчитать их количество?",
+    "options": [
+      "SELECT country, COUNT(*) FROM musicians GROUP BY country;",
+      "SELECT country, COUNT(*) FROM musicians;",
+      "SELECT country, COUNT(*) GROUP BY country FROM musicians;"
+    ],
+    "correct_option": 0,
+    "explanation": "GROUP BY указывается после FROM, затем идут агрегатные функции."
+  },
+  {
+    "id": 9,
+    "question": "Как выбрать музыкантов, родившихся после 1900 года?",
+    "options": [
+      "SELECT * FROM musicians WHERE birthday > '1900-01-01';",
+      "SELECT * FROM musicians WHERE birthday >= 1900;",
+      "SELECT * FROM musicians WHERE birthday AFTER '1900-01-01';"
+    ],
+    "correct_option": 0,
+    "explanation": "Для фильтрации по дате используется WHERE birthday > '1900-01-01';"
+  },
+  {
+    "id": 10,
+    "question": "Как получить возраст музыканта в годах на текущий момент?",
+    "options": [
+      "SELECT name, EXTRACT(YEAR FROM AGE(NOW(), birthday)) AS age FROM musicians;",
+      "SELECT name, YEAR(NOW() - birthday) AS age FROM musicians;",
+      "SELECT name, DATEDIFF(YEAR, birthday, NOW()) AS age FROM musicians;"
+    ],
+    "correct_option": 0,
+    "explanation": "В PostgreSQL для вычисления возраста используется AGE() и EXTRACT(YEAR FROM ...)."
+  }
+]
